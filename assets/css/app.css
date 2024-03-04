@@ -1,0 +1,14 @@
+@import url(./components/global.css);
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dadada;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color:#363535;
+    font-size: clamp(3rem, 7.5vw, 6rem);
+}
