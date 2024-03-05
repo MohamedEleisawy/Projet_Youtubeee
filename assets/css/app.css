@@ -1,18 +1,16 @@
 /* @import url(./components/global.css); */
 @import url(./components/boutton.css);
 /* @import url(./components/card.css); */
+@import url(./components/footer.css);
 @import url(./components/nav.css);
+@import url(./components/global.css);
 
-*,*::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #1a1a1a;
-}
 h1{
     font-family: 'Poppins', sans-serif;
     color:#363535;
     font-size: clamp(3rem, 7.5vw, 6rem);
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
 }
