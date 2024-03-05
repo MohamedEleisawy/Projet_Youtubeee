@@ -1,7 +1,7 @@
 #checkbox {
     display: none;
   }
-  .show {
+  .show{
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
@@ -60,8 +60,7 @@
   }
 
   /* bare */
-  .navbar {
-    border-color: transparent;
+  .nav {
     background-color: #222;
   }
   
@@ -76,8 +75,8 @@
   .navbar .nav li a:hover,
   .navbar .nav li a:focus {
     outline: 0;
-    color: #1ee2e7;
-    /* color: #A41916; */
+    /* color: #1ee2e7; */
+    color: #ff1e16;
   }
 ul
   .nav{
@@ -111,4 +110,16 @@ ul
       transform: translateY(0);
     }
   }
-  
+
+
+  @media screen and (min-width: 780px) {
+
+#hamburger{
+  display: none;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+} 
