@@ -38,7 +38,7 @@
     transform-origin: right;
     transition-duration: .3s;
     z-index: 2;
-    background: linear-gradient(90deg, rgba(237,17,25,1) 14%, rgba(251,239,239,1) 100%);
+    background: linear-gradient(90deg, #c4302b 14%, rgba(251,239,239,1) 100%);
 
   }
   
