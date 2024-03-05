@@ -1,7 +1,18 @@
 #checkbox {
     display: none;
   }
-  
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 0.5s ease;
+  }
+  #menu {
+    display: none;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
   .toggle {
     position: absolute;
     right: 1rem;
@@ -22,14 +33,9 @@
     height: 4px;
     background-color: rgb(253, 255, 243);
     border-radius: 5px;
-    /* background: linear-gradient(90deg, rgba(237,17,25,1) 14%, rgba(251,239,239,1) 100%); */
 
     transition-duration: .3s;
   }
-  
-  /* #checkbox:checked + .toggle .bars {
-    margin-left: 13px;
-  } */
   
   #checkbox:checked + .toggle #bar2 {
 
@@ -39,7 +45,6 @@
     transition-duration: .3s;
     z-index: 2;
     background: linear-gradient(90deg, #c4302b 14%, rgba(251,239,239,1) 100%);
-
   }
   
   #checkbox:checked + .toggle #bar1 {
@@ -47,9 +52,7 @@
     transition-duration: .3s;
     transform-origin: left;
     z-index: 1;
-    background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(247, 30, 30) 90%);
-
-
+    background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(247, 30, 30) 100%);
   }
   #checkbox:checked + .toggle {
 
@@ -75,8 +78,36 @@
     outline: 0;
     color: #1ee2e7;
   }
+ul
+  .nav{
+    list-style: none;
+  }
   
-  .active a{
-    background-color: white;
+  .nav li {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+  }
+  .nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   

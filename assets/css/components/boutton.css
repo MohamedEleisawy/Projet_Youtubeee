@@ -245,7 +245,7 @@
   }
   
   /* noir */
-
+/* 
   button {
     padding: 10px 40px;
     font-size: 18px;
@@ -311,4 +311,4 @@
   
   button:active:after {
     box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
-  }
+  } */
