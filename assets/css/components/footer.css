@@ -1,6 +1,6 @@
 footer{
     color: #f1f1f1;
-    background-color: #222;
+    
 
 }
 .content-footer{
@@ -10,14 +10,19 @@ footer{
 .title-footer{
     margin: 3rem;
     
+    
 }
 .logo a{
     color: #f1f1f1;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(2rem, 2.5vw, 8rem);
     text-decoration: none;
-    margin: 5.5rem;
+    /* margin: 5.5rem; */
     font-family: 'Montserrat', sans-serif;
+  
 }
-.container-logo{
-    padding-top: 1.5rem;
+.logo{
+    display: flex;    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    
 }
