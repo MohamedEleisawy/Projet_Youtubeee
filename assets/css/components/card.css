@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 85vw;
   margin: auto;
-  height: 58vh;
+  height: auto;
   background: #07182E;
   position: relative;
   display: flex;
@@ -16,7 +16,8 @@
 .card h2 {
   z-index: 1;
   color: white;
-  font-size: 2em;
+  margin-top: 32px;
+  font-size: clamp(1.2rem , 1.3rem, 1.4rem);
 }
 h2 span{
   position: relative;
@@ -38,7 +39,7 @@ h2 span{
   from {
     transform: rotate(0deg);
   }
-
+  
   to {
     transform: rotate(360deg);
   }
@@ -54,9 +55,12 @@ h2 span{
 .text{
   color: white;
   z-index: 100;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0em 3em 0em 5em;
-    text-align: start;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0em 3em 0em 5em;
+  text-align: start;
+  padding: 1rem 0rem 2rem 0rem;
+  font-size: clamp(0.7rem , 0.8rem, 0.9rem);
+  
 }
 
 @media screen and (min-width: 780px) {
@@ -68,5 +72,10 @@ h2 span{
     height: 380%;
     animation: rotBGimg 7s linear infinite;
   }
+  .text{
+    font-size: clamp(1.1rem , 1rem, 1.2rem);
+  }
+  .card h2{
+    font-size: clamp(1.5rem , 1.6rem, 1.7rem);
+  }
 }
-

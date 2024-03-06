@@ -48,7 +48,7 @@
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .text {
+.animated-button .bouton {
   position: relative;
   z-index: 1;
   transform: translateX(-12px);
@@ -69,7 +69,7 @@
   left: 16px;
 }
 
-.animated-button:hover .text {
+.animated-button:hover .bouton {
   transform: translateX(12px);
 }
 
