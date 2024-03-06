@@ -46,10 +46,10 @@ h2{
 
 h3{
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 8px;
-    font-size: 21px ;
-    line-height: 15px ;
+    margin: 10px 5px 2px;
     text-align: center ;
+    font-size: clamp(1rem, 1.2rem, 1.3rem);
+    color: white;
 }
 h4{
     font-family: 'Montserrat', sans-serif;

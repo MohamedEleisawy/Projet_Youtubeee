@@ -78,7 +78,7 @@ footer{
     margin-top: 10px;
 }
 i{
-    font-size: 3vw;
+    font-size: 2rem;
 }
 @media screen and (min-width: 780px) {
     .content-footer{
@@ -89,7 +89,7 @@ i{
     padding-top: 45px;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 90vw;
     }
@@ -97,6 +97,9 @@ i{
    .txt-footer{
         display: block;
         text-align: center;
+    }
+    i{
+        font-size: 3.1rem;
     }
 
 }
