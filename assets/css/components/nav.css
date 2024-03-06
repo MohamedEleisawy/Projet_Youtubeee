@@ -6,15 +6,18 @@
     flex-direction: column;
     justify-content: space-between;
     animation: fadeIn 0.5s ease;
+
   }
   #menu {
     display: none;
     justify-content: center; 
     align-items: center; 
     height: 100vh;
+    
   }
   .toggle {
-    position: absolute;
+    z-index: 200;
+    position: fixed;
     right: 1rem;
     top: 1.5rem;
     width: 40px;
@@ -33,7 +36,6 @@
     height: 4px;
     background-color: rgb(253, 255, 243);
     border-radius: 5px;
-
     transition-duration: .3s;
   }
   
@@ -55,12 +57,21 @@
     background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(247, 30, 30) 100%);
   }
   #checkbox:checked + .toggle {
-
     transform: rotate(90deg);
+  }
+  /* logo */
+  #logo{
+    display: none;
+    position: absolute;
+    height: 4.5rem;
+    width: 6.5rem;
   }
 
   /* bare */
   .nav {
+    z-index: 150;
+    width: 100%;
+    position: fixed;
     background-color: #222;
   }
   
@@ -112,14 +123,17 @@ ul
   }
 
 
-  @media screen and (min-width: 780px) {
-
-#hamburger{
-  display: none;
-}
-#menu{
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-}
+@media screen and (min-width: 780px) {
+  #hamburger{
+    display: none;
+  }
+  #menu{
+      display: flex;
+      flex-direction: row;
+      height: 10vh;
+    justify-content: center;
+    }
+    .navbar .nav li {
+      padding: 1rem 1.2rem 0rem 5rem;
+    }
 } 

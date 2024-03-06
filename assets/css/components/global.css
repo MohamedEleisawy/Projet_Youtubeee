@@ -1,9 +1,79 @@
-
 *,*::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior:smooth;
 }
 body{
     background-color: #1a1a1a;
+}
+h1{
+    text-align: center;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: clamp(1.8rem, 2.2rem, 2.7rem);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+h1 span{
+    font-weight: 700;
+    color: #ff1e16;
+    /* color: #c4302b; */
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color:#363535;
+    font-size: clamp(3rem, 7.5vw, 6rem);
+    text-align: center;
+    color: white;
+}
+.aaa{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-size: clamp(1.8rem, 2.2rem, 2.7rem);
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 8px;
+    font-size: 21px ;
+    line-height: 15px ;
+    text-align: center ;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 8px;
+    font-size: clamp(2rem, 2vw, 5rem);
+    line-height: 15px ;
+    text-align: center ;
+}
+.txt-footer{
+    font-size: clamp(1rem, 0.5vw, 2rem);
+}
+@media screen and (min-width: 780px) {
+    h1{
+        font-size: clamp(3.2rem, 3.7rem, 4.6rem);
+    }
+    .aaa{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        font-size: clamp(3rem, 3.4rem, 3.8rem);
+    }
 }

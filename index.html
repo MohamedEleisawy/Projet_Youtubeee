@@ -14,7 +14,6 @@
 <!--  <h1>Projet Youtube</h1>-->   
 <nav class="navbar" id="navbar">
   <div>
-    <div id="logo"></div>
     <div>
       <input id="checkbox" type="checkbox">
       <label class="toggle" for="checkbox" id="hamburger">
@@ -24,12 +23,18 @@
       </label>
     </div>
   </div>
+  <div id="logo">
+    <img src="./assets/img/logo_Blanc.png" alt="logo" id="logo"/>
+  </div>
   <ul class="nav" id="menu">
     <li class="active element">
-      <a href="#page-top">Accueil</a>
+      <a href="#acceuil">Accueil</a>
     </li>
     <li class="element">
-      <a href="#about">À propos</a>
+      <a href="#playliste">Playlist</a>
+    </li>
+    <li class="element">
+      <a href="#apropos">À-propos</a>
     </li>
     <li class="element">
       <a href="#contact">Contact</a>
@@ -37,35 +42,149 @@
   </ul>
 </nav>
 
-    <header>
+<main>
+    <header id="acceuil">
+      <img class="banniere" src="./assets/img/v2_180_banniere.png" alt="" width="100" height="100">
     </header>
 
-    <main>
+      <!-- titre -->
+      <h1>Apprenez sur l’histoire du jeu vidéo, en 
+        <span>180 secondes</span> 
+      </h1>
+      <p class="aaa">top chrono.</p>
+      <div class="video-V">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4JgMGas0lXI?si=LsK0SNo_m602Pn7y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-    </main>
-    <footer>
+        <button class="animated-button">
+          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">Chaine</span>
+          <span class="circle"></span>
+          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+        <!--
+          <div class="vid">
+              <video controls width="420">
+                <source src="/assets/video/video.mp4" type="video/mp4"/>
+              </video> 
+              <a href="https://www.youtube.com/watch?v=E54eDIA62H8">Lien vers la video</a>
+            </div>
+        --> 
+  </main>
+  <h2 id="playliste">Playlist</h2>
+  <section class="game-section">
+    <div class="owl-carousel custom-carousel owl-theme">
+      <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+        <div class="item-desc">
+          <h3 class="h3">Dota 2</h3>
+          <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+        <div class="item-desc">
+          <h3 class="h3">The Witcher 3</h3>
+          <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+            of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
+        <div class="item-desc">
+          <h3 class="h3">RDR 2</h3>
+          <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+        <div class="item-desc">
+          <h3 class="h3">PUBG Mobile</h3>
+          <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+        <div class="item-desc">
+          <h3 class="h3">Fortnite</h3>
+          <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+            for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+        <div class="item-desc">
+          <h3 class="h3">Far Cry 5</h3>
+          <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+            which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section>
+    <article id="apropos">
+      <div class="card">
+        <h2 class="sss"><span>180 secondes</span> c’est quoi ?</h2>
+        <p class="text">Bienvenue sur la chaîne YouTube "180 secondes" 
+  
+          Sur cette plateforme, nous nous consacrons à partager des histoires et des anecdotes fascinantes sur le monde du jeu vidéo, et peu importe si vous vous y connaissez en jeu vidéo, le tout en un temps record : 180 secondes. Nous croyons fermement que même dans le tourbillon effréné de nos vies quotidiennes, il est toujours possible de s'immerger dans les profondeurs captivantes de la culture vidéoludique.
+          
+          Dans chaque vidéo, nous vous offrons une plongée rapide mais enrichissante dans l'univers des jeux vidéo. Que ce soit pour découvrir les coulisses de la création d'un jeu emblématique, explorer des moments marquants de l'histoire du gaming, ou simplement pour savourer une anecdote insolite, notre objectif est de vous divertir et de vous émerveiller en seulement 180 secondes.
+          
+          Nous sommes passionnés par les jeux vidéo sous toutes leurs formes, des classiques intemporels aux dernières innovations technologiques. Notre équipe dévouée s'efforce de vous offrir un contenu varié et stimulant, tout en veillant à ce que chaque vidéo soit aussi informative que divertissante.
+          
+          Rejoignez-nous dans cette aventure passionnante où nous explorons les recoins les plus fascinants de l'univers vidéoludique, en vous promettant une expérience captivante à chaque clic.
+          
+          Abonnez-vous dès maintenant pour ne manquer aucune de nos vidéos !</p>
+      </div>
+      
+    </article>
+</section>
+    <footer id="contact">
       <div class="content-footer">
-        <h3 class="title-footer">NOS Réseaux sociaux !</h3>
+        <h4 class="title-footer">Nos Réseaux sociaux</h4>
         <div class="logo">
-          <div class="">
-            <a href=""><i class="ri-youtube-fill"></i>youtube.com/@180secondes</a>
+          <div class="container-logo">
+            <a class="ligne" href="">
+              <i class="ri-youtube-fill"></i>
+              <p class="txt-footer">youtube.com/@180seconde</p>
+            </a>
           </div>
           <div class="container-logo">
-            <a href=""><i class="ri-twitch-fill"></i>twitch.com/@180secondes</a>
+            <a class="ligne" href="">
+              <i class="ri-twitch-fill"></i>
+              <p class="txt-footer">twitch.com/@180secondes</p>
+            </a>
           </div>
           <div class="container-logo">
-            <a href=""><i class="ri-tiktok-line"></i>tiktok.com/@180secondes</a>
+            <a class="ligne" href="">
+              <i class="ri-tiktok-line"></i>
+              <p class="txt-footer">tiktok.com/@180secondes</p>
+            </a>
           </div>
           <div class="container-logo">
-            <a href=""><i class="ri-facebook-circle-fill"></i>facebook.com/@180secondes</a>
+            <a class="ligne" href="">
+              <i class="ri-facebook-circle-fill"></i>
+              <p class="txt-footer">facebook.com/@180secondes</p>
+            </a>
           </div>
           <div class="container-logo">
-            <a href=""><i class="ri-instagram-fill"></i>instagram.com/@180secondes</a>
+            <a  class="ligne" href="#">
+              <i class="ri-instagram-fill"></i>
+              <p class="txt-footer">instagram.com/@180secondes</p>
+            </a>
           </div>
         
         </div>
       </div>
     </footer>
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js">
+    </script>
 </body>
 </html>
