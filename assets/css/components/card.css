@@ -60,7 +60,8 @@ h2 span{
   text-align: start;
   padding: 1rem 0rem 2rem 0rem;
   font-size: clamp(0.7rem , 0.8rem, 0.9rem);
-  
+  line-height: 20px;
+
 }
 
 @media screen and (min-width: 780px) {
@@ -74,6 +75,7 @@ h2 span{
   }
   .text{
     font-size: clamp(1.1rem , 1rem, 1.2rem);
+    line-height: 30px;
   }
   .card h2{
     font-size: clamp(1.5rem , 1.6rem, 1.7rem);
