@@ -45,7 +45,6 @@ if (customCarousel) {
         }
     });
 }
-
-
-      
+let button = document.getElementById('btnMention')
+ 
 });

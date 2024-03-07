@@ -9,8 +9,6 @@ body{
 }
 h1{
     text-align: center;
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #fff;
@@ -44,19 +42,18 @@ h2{
     font-size: clamp(1.8rem, 2.2rem, 2.7rem);
 }
 
-h3{
+h3, h4{
     font-family: 'Montserrat', sans-serif;
-    margin: 10px 5px 2px;
-    text-align: center ;
-    font-size: clamp(1rem, 1.2rem, 1.3rem);
+    margin: 1.3rem 1rem 0rem 2.2rem;
+    text-align: start ;
+    font-size: clamp(0.7rem, .8rem, .9rem);
     color: white;
 }
 h4{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 8px;
-    font-size: clamp(2rem, 2vw, 5rem);
-    line-height: 15px ;
-    text-align: center ;
+    text-align: center;
+}
+a{
+    text-decoration: none;
 }
 .txt-footer{
     font-size: clamp(1rem, 0.5vw, 2rem);
@@ -75,5 +72,12 @@ h4{
         font-weight: 500;
         letter-spacing: 1.2px;
         font-size: clamp(3rem, 3.4rem, 3.8rem);
+    }
+    h3{
+        font-size: clamp(1.2rem, 1.3rem, 1.4rem);
+        margin: 1.3rem 9rem 0rem 8.2rem;
+    }
+    h4{
+        font-size: clamp(1.2rem, 1.3rem, 1.4rem);
     }
 }

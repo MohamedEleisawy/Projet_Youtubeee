@@ -67,9 +67,9 @@ h2 span{
   .card::before {
     content: '';
     position: absolute;
-    width: 200px;
-    background-image: linear-gradient(180deg, #c4302b, rgba(255, 255, 255));
-    height: 380%;
+    width: 150px;
+    background-image: linear-gradient(180deg, #e6231d, rgba(255, 255, 255));
+    height: 600%;
     animation: rotBGimg 7s linear infinite;
   }
   .text{

@@ -203,7 +203,6 @@ button {
     width: 250px;
   }
 
-  /* -------- Landing page ------- */
   .game-section {
     padding: 30px 15px 20px;
   }
@@ -215,7 +214,7 @@ button {
   }
 
   .game-section .item.active {
-    width: 270px;
+    width: 320px;
     box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
   }

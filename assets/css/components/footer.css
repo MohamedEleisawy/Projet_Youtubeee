@@ -8,6 +8,8 @@ footer{
 }
 .title-footer{
     text-align: center;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 2vw, 5rem);
     
 }
 .logo a{
@@ -15,8 +17,6 @@ footer{
     font-size: clamp(1rem, 2vw, 5rem);
     text-decoration: none; 
     font-family: 'Montserrat', sans-serif;
-    
-  
 }
 .ri-youtube-fill:hover{
     color: #c4302b;
@@ -80,6 +80,39 @@ footer{
 i{
     font-size: 2rem;
 }
+.img-footer{
+    width: 20vw;
+}
+.container-img-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+#btnMention{
+    font-family: 'Montserrat', sans-serif;
+    color:  #ff1e16;
+    
+}
+.txtMention{
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.5rem, 1vw, 3rem);
+    margin-top: 25px;
+}
+.mentionTitle{
+    color:#ff1e16 ;
+    text-align: center;
+}
+.reserver{
+    font-family: 'Montserrat', sans-serif;
+    color: #ff1e16 ;
+}
+.mention-reserve{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
 @media screen and (min-width: 780px) {
     .content-footer{
         text-align: center;
@@ -101,5 +134,11 @@ i{
     i{
         font-size: 3.1rem;
     }
-
+    .img-footer{
+        width: 11vw;
+        transition: all 0.5s ease;
+    }
+    .img-footer:hover{
+        transform: translateY(-180deg);
+    }
 }

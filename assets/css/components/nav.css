@@ -62,7 +62,7 @@
   /* logo */
   #logo{
     display: none;
-    position: absolute;
+    position: fixed;
     height: 4.5rem;
     width: 6.5rem;
   }
@@ -135,5 +135,9 @@ ul
     }
     .navbar .nav li {
       padding: 1rem 1.2rem 0rem 5rem;
+    }
+    #logo{
+      display: block;
+      z-index: 200;
     }
 } 
