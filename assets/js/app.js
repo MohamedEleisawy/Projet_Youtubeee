@@ -16,6 +16,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
     btnHamburger.addEventListener('click', function() {
       menu.classList.toggle('show');
     });
+  
+    const elements = document.querySelectorAll('#menu .element');
+    elements.forEach(element => {
+      element.addEventListener('click', () => {
+        elements.forEach(e => e.classList.remove('actif'));
+        element.classList.add('actif');
+        if(window.innerWidth<768){
+            menu.classList.toggle('show');
+        }
+      });
+    });
 
     // Sélectionne tous les éléments avec la classe 'custom-carousel'
 var customCarousel = document.querySelector(".custom-carousel");
