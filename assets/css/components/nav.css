@@ -8,6 +8,9 @@
     animation: fadeIn 0.5s ease;
 
   }
+  .actif{
+    background-color: #222;
+  }
   #menu {
     display: none;
     justify-content: center; 

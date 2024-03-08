@@ -1,15 +1,5 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     'use strict';
-    // let accordion = document.getElementById('accordion');
-    // let ouvertureDesMentionsLegales = document.getElementById('ouvertureDesMentionsLegales');
-    
-    // ouvertureDesMentionsLegales.addEventListener('click', function () {
-    //     if (accordion.style.display === 'block') {
-    //         accordion.style.display = 'none';
-    //     } else {
-    //         accordion.style.display = 'block';
-    //     }
-    // });
     let btnHamburger = document.getElementById('hamburger');
     let menu = document.getElementById('menu');
     
@@ -22,17 +12,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
       element.addEventListener('click', () => {
         elements.forEach(e => e.classList.remove('actif'));
         element.classList.add('actif');
-        if(window.innerWidth<768){
-            menu.classList.toggle('show');
-        }
       });
     });
 
     // Sélectionne tous les éléments avec la classe 'custom-carousel'
 var customCarousel = document.querySelector(".custom-carousel");
 
-// Initialise une fonction pour basculer la classe 'active'
-function toggleActive(event) {
+    function toggleActive(event) {
     // Sélectionne tous les éléments enfants avec la classe 'item'
     var items = customCarousel.querySelectorAll(".item");
     
